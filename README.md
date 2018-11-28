@@ -1,5 +1,5 @@
 # Massachusetts Election Shapefiles
-These shapefiles were compiled by Metric Geometry and Gerrymandering Group (MGGG) staff, Radcliffe Research Partners, and members of the Voting Rights Data Institute. The Voting Rights Data Institute (VRDI) was a 2018 summer intensive sponsored by the Metric Geometry and Gerrymandering Group (MGGG) at Tufts and MIT, with major support from a Bose Research Grant at MIT and from the Jonathon M. Tisch College of Civic Life at Tufts.
+These shapefiles were processed by Metric Geometry and Gerrymandering Group (MGGG) staff, Radcliffe Research Partners, and members of the Voting Rights Data Institute. The Voting Rights Data Institute (VRDI) was a 2018 summer intensive sponsored by MGGG at Tufts and MIT, with major support from a Bose Research Grant at MIT and from the Jonathon M. Tisch College of Civic Life at Tufts.
 
 ## Sources
 The 2012-2016 raw, unprocessed precinct shapefile comes from the office of the Secretary of the Commonwealth of Massachuestts, William Francis Galvin. The 2002-2010 raw, unprocessed shapefile comes from the United States Census Bureau (available for download here: https://catalog.data.gov/dataset/tiger-line-shapefile-2012-2010-state-massachusetts-2010-census-voting-district-state-based-vtd) and was sent to MGGG from Secretary Galvin's office. All election data comes from the Secretary of the Commonwealth's Elections Division website (available here http://electionstats.state.ma.us).
@@ -70,3 +70,6 @@ Below is a brief description of each of the listed variables in the attribute ta
 - `PRES16D`: Number of votes for 2016 Democratic presidential candidate
 - `PRES16R`: Number of votes for 2016 Republican presidential candidate
 - `POP10`: Population from 2010 census
+
+## Rating
+We give these shapefiles an A rating. They come from either the Massachusett Secretary of the Commonwealth's office or the US Census Bureau. They were validated and edited by MGGG staff.
