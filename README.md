@@ -5,7 +5,7 @@ These shapefiles were processed by Metric Geometry and Gerrymandering Group (MGG
 The 2012-2016 raw, unprocessed precinct shapefile comes from the office of the Secretary of the Commonwealth of Massachuestts, William Francis Galvin. The 2002-2010 raw, unprocessed shapefile comes from the United States Census Bureau (available for download here: https://catalog.data.gov/dataset/tiger-line-shapefile-2012-2010-state-massachusetts-2010-census-voting-district-state-based-vtd) and was sent to MGGG from Secretary Galvin's office. All election data comes from the Secretary of the Commonwealth's Elections Division website (available here http://electionstats.state.ma.us).
 
 ## Processing
-In order to join election data to the precinct shapefiles, certain pre-processing steps were taken. Certain precincts in the election results csv were aggregated into one precinct to match the shapefile. For example, in the 2012-2016 elections votes in Andover precinct 7 and 7A were aggregated into one precinct, Andover precinct 7. In the 2002-2010 shapefile, Ware precinct 2 and precinct 3 were merged into one precinct. Undefined areas in the 2002-2010 shapefile (meaning areas encompassing only water with zero population) were deleted. A script was used to create unique identifiers for the election results csvs in order to join them to the shapefiles. The script faster_proration_with_counties.py (available in https://github.com/gerrymandr/Preprocessing) was used to aggregate 2000 Census population from census blocks to 2002-2010 precincts.
+In order to join election data to the precinct shapefiles, certain pre-processing steps were taken. Certain precincts in the election results csv were aggregated into one precinct to match the shapefile. For example, in the 2012-2016 elections votes in Andover precinct 7 and 7A were aggregated into one precinct, Andover precinct 7. In the 2002-2010 shapefile, Ware precinct 2 and precinct 3 were merged into one precinct. Undefined areas in the 2002-2010 shapefile (meaning areas encompassing only water with zero population) were deleted. A script was used to create unique identifiers for the election results csvs in order to join them to the shapefiles. The script faster_proration_with_counties.py (available in https://github.com/gerrymandr/Preprocessing) was used to aggregate 2000 Census population from census blocks to 2002-2010 precincts. Roundoff (also available from https://github.com/gerrymandr/Preprocessing) was used to assign US Congressional Districts (downloaded from https://www.census.gov/geo/maps-data/data/cbf/cbf_cds.html) to precincts.
 
 ## Metadata
 Below is a brief description of each of the listed variables in the attribute table of the 2002-2010 shapefile:
@@ -39,6 +39,7 @@ Below is a brief description of each of the listed variables in the attribute ta
 - `SEN10R`: Number of votes for 2010 Republican senate candidate
 - `SEN10D`: Number of votes for 2010 Democratic senate candidate
 - `POP2000`: Population from 2000 Census
+- `CD`: Congressional District ID
 
 Below is a brief description of each of the listed variables in the attribute table of the 2012-2016 shapefile:
 - `District`: Ward number/letter and precinct number/letter
@@ -70,6 +71,7 @@ Below is a brief description of each of the listed variables in the attribute ta
 - `PRES16D`: Number of votes for 2016 Democratic presidential candidate
 - `PRES16R`: Number of votes for 2016 Republican presidential candidate
 - `POP10`: Population from 2010 census
+- `CD`: Congressional District ID
 
 ## Rating
 We give these shapefiles an A rating. They come from either the Massachusett Secretary of the Commonwealth's office or the US Census Bureau. They were validated and edited by MGGG staff.
