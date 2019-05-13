@@ -44,17 +44,6 @@ Below is a brief description of each of the listed variables in the attribute ta
 Below is a brief description of each of the listed variables in the attribute table of the 2012-2016 shapefile:
 - `District`: Ward number/letter and precinct number/letter
 - `Name`: Precinct name
-- `Population`: Total population from 2010 census
-- `White`: White population from 2010 census
-- `Black`: Black/African American population from the 2010 census
-- `AmIndian`: American Indian and Alaska Native population from the 2010 census
-- `Asian`: Asian population from the 2010 census
-- `Hawaiian`: Native Hawaiian and other Pacific Islander population from the 2010 census
-- `Other`: Population of other race from 2010 census
-- `_1_Race`: Population of one race from 2010 census
-- `_2__Races`: Population of two or more races from 2010 census
-- `Hispanic_O`: Population of Hispanic origin from 2010 census
-- `Not_Hispan`: Population not of Hispanic origin from 2010 census
 - `Shape_Le_1`: Length of feature
 - `Shape_Area`: Area of feature 
 - `City/Town`: Municipality name
@@ -72,6 +61,31 @@ Below is a brief description of each of the listed variables in the attribute ta
 - `PRES16R`: Number of votes for 2016 Republican presidential candidate
 - `POP10`: Population from 2010 census
 - `CD`: Congressional District ID
+* `TOTPOP`: Total population 
+* `NH_WHITE`: White, non-hispanic, population
+* `NH_BLACK`: Black, non-hispanic, population
+* `NH_AMIN`: American Indian and Alaska Native, non-hispanic, population
+* `NH_ASIAN`: Asian, non-hispanic, population
+* `NH_NHPI`: Native Hawaiian and Pacific Islander, non-hispanic, population
+* `NH_OTHER`: Other race, non-hispanic, population
+* `NH_2MORE`: Two or more races, non-hispanic, population
+* `HISP`: Hispanic population
+* `H_WHITE`: White, hispanic, population
+* `H_BLACK`: Black, hispanic, population
+* `H_AMIN`: American Indian and Alaska Native, hispanic, population
+* `H_ASIAN`: Asian, hispanic, population
+* `H_NHPI`: Native Hawaiian and Pacific Islander, hispanic, population
+* `H_OTHER`: Other race, hispanic, population
+* `H_2MORE`: Two or more races, hispanic, population
+* `VAP`: Total voting age population
+* `HVAP`: Hispanic voting age population
+* `WVAP`: White, non-hispanic, voting age population
+* `BVAP`: Black, non-hispanic, voting age population
+* `AMINVAP`: American Indian and Alaska Native, non-hispanic, voting age population
+* `ASIANVAP`: Asian, non-hispanic, voting age population
+* `NHPIVAP`: Native Hawaiian and Pacific Islander, non-hispanic, voting age population
+* `OTHERVAP`: Other race, non-hispanic, voting age population
+* `2MOREVAP`: Two or more races, non-hispanic, voting age population
 
 ## Rating
 We give these shapefiles an A rating. They come from either the Massachusett Secretary of the Commonwealth's office or the US Census Bureau. They were validated and edited by MGGG staff.
